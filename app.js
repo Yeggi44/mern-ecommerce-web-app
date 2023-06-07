@@ -23,7 +23,7 @@ app.use("/api/v1/auth", require("./routes/authRoute"));
 app.use("/api/v1/category", require("./routes/categoryRoute"));
 app.use("/api/v1/product", require("./routes/productRoute"));
 
-// rest api
+//rest api
 app.use("*",function(req,res){
   res.sendFile(path.join(__dirname," ../client/build/index.html"));
 });
